@@ -13,6 +13,9 @@ class Node(
     var parent: Node? = null
 
     fun insert(node: Node): Node {
+        if(node.parent != null) {
+            throw RuntimeException("Insert can only be called on root node")
+        }
         insertRecursive(node)
         return findRoot()
     }
@@ -28,7 +31,7 @@ class Node(
                 node.parent = this
                 findUnbalancedParent()?.let {
                     val rotation = determineRotation(it)
-                    rotation.rotate(it) ?: throw RuntimeException("Invalid rotation")
+                    rotation.rotate(it)
                 }
                 this.parent?.let { null }
             } else {
@@ -39,7 +42,7 @@ class Node(
                 left = node
                 node.parent = this
                 findUnbalancedParent()?.let {
-                    determineRotation(it).rotate(it) ?: throw RuntimeException("Invalid rotation")
+                    determineRotation(it).rotate(it)
                 }
                 this.parent?.let { null }
             } else {
@@ -65,23 +68,23 @@ class Node(
     }
 
     private fun determineRotation(node: Node): Rotations {
-        val longestLeftOfChild = node.left?.longestPath() ?: 0
-        val longestRightOfChild = node.right?.longestPath() ?: 0
+        val longestPathOnLeftChild = node.left?.longestPath() ?: 0
+        val longestPathOnRightChild = node.right?.longestPath() ?: 0
 
-        if (longestLeftOfChild > longestRightOfChild) {
-            val longestLeftOfGrandChild = node.left?.left?.longestPath() ?: 0
-            val longestRightOfGrandChild = node.left?.right?.longestPath() ?: 0
-            return if (longestLeftOfGrandChild > longestRightOfGrandChild) {
+        if (longestPathOnLeftChild > longestPathOnRightChild) {
+            val longestPathOnLeftGrandChild = node.left?.left?.longestPath() ?: 0
+            val longestPathOnRightGrandChild = node.left?.right?.longestPath() ?: 0
+            return if (longestPathOnLeftGrandChild > longestPathOnRightGrandChild) {
                 Rotations.R
-            } else if (longestLeftOfGrandChild < longestRightOfGrandChild) {
+            } else if (longestPathOnLeftGrandChild < longestPathOnRightGrandChild) {
                 Rotations.LR
             } else throw RuntimeException("Invalid tree")
-        } else if (longestLeftOfChild < longestRightOfChild) {
-            val longestLeftOfGrandChild = node.right?.left?.longestPath() ?: 0
-            val longestRightOfGrandChild = node.right?.right?.longestPath() ?: 0
-            return if (longestLeftOfGrandChild > longestRightOfGrandChild) {
+        } else if (longestPathOnLeftChild < longestPathOnRightChild) {
+            val longestPathOnLeftGrandChild = node.right?.left?.longestPath() ?: 0
+            val longestPathOnRightGrandChild = node.right?.right?.longestPath() ?: 0
+            return if (longestPathOnLeftGrandChild > longestPathOnRightGrandChild) {
                 Rotations.RL
-            } else if (longestLeftOfGrandChild < longestRightOfGrandChild) {
+            } else if (longestPathOnLeftGrandChild < longestPathOnRightGrandChild) {
                 Rotations.L
             } else throw RuntimeException("Invalid tree")
         } else throw RuntimeException("Invalid tree")

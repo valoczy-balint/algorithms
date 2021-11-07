@@ -10,5 +10,5 @@ fun main() {
         root = root.insert(Node(item))
     }
 
-    println(root)
+    println(root.value)
 }
