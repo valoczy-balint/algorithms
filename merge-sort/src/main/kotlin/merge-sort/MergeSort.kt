@@ -56,5 +56,4 @@ class MergeSort {
 
         return result
     }
-
 }
