@@ -1,5 +1,4 @@
 plugins {
-//    id 'org.jetbrains.kotlin.jvm' version '1.5.31'
     val kotlinVersion = "1.5.31"
 
     kotlin("jvm") version kotlinVersion
