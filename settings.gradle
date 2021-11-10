@@ -2,3 +2,4 @@ rootProject.name = 'algorithms'
 
 include("avl")
 include("merge-sort")
+include('dijkstra')
