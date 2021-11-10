@@ -1,5 +1,9 @@
 rootProject.name = 'algorithms'
 
+include('graph')
+include('tree')
+
 include("avl")
 include("merge-sort")
 include('dijkstra')
+include('bfs')
