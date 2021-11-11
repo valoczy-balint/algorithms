@@ -3,7 +3,10 @@ rootProject.name = 'algorithms'
 include('graph')
 include('tree')
 
+include('heap')
 include("avl")
+
 include("merge-sort")
 include('dijkstra')
 include('bfs')
+include('dfs')
