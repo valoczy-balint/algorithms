@@ -10,3 +10,7 @@ include("merge-sort")
 include('dijkstra')
 include('bfs')
 include('dfs')
+
+include 'dynamic-programming:staircase'
+findProject(':dynamic-programming:staircase')?.name = 'staircase'
+
