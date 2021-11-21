@@ -11,7 +11,7 @@ class MinHeap(
     fun delete(): Int {
         root.value = lastInserted.value
         lastInserted.parent?.let {
-            if(it.left == lastInserted) {
+            if (it.left == lastInserted) {
                 it.left = null
             } else {
                 it.right = null
@@ -24,7 +24,6 @@ class MinHeap(
 
         return root.value
     }
-
 
     private fun trickleDown(node: BinaryNode<Int>) {
         node.left?.let { left ->
@@ -57,7 +56,6 @@ class MinHeap(
             }
         }
     }
-
 
     fun insert(value: Int) {
         val node = BinaryNode(value)
@@ -151,7 +149,7 @@ class MinHeap(
 
         queue.add(root)
 
-        while(queue.isNotEmpty()) {
+        while (queue.isNotEmpty()) {
             val current = queue.remove()
             current.left?.let {
                 queue.add(it)
@@ -162,9 +160,6 @@ class MinHeap(
             result.add(current.value)
         }
 
-
         return "[${result.joinToString(", ")}]"
     }
-
-
 }

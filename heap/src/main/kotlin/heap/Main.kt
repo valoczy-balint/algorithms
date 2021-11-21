@@ -2,7 +2,6 @@ package heap
 
 import tree.BinaryNode
 
-
 fun main() {
 
     val root = BinaryNode(6)
@@ -17,7 +16,6 @@ fun main() {
     minHeap.insert(56)
     minHeap.insert(92)
 
-
     println(minHeap)
 
     println(minHeap.delete())
@@ -26,5 +24,4 @@ fun main() {
     println(minHeap.delete())
 
     println(minHeap)
-
 }

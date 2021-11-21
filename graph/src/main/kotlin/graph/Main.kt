@@ -36,5 +36,5 @@ fun getStaticGraph(): List<Node> {
     I.neighbours.set(G, 5)
     J.neighbours.set(E, 6)
 
-    return listOf(A,B,C,D,E,F,G,H,I,J)
+    return listOf(A, B, C, D, E, F, G, H, I, J)
 }

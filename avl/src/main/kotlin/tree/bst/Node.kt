@@ -13,7 +13,7 @@ class Node(
     var parent: Node? = null
 
     fun insert(node: Node): Node {
-        if(node.parent != null) {
+        if (node.parent != null) {
             throw RuntimeException("Insert can only be called on root node")
         }
         insertRecursive(node)
