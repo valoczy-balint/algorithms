@@ -5,19 +5,26 @@ import tree.BinaryNode
 
 fun main() {
 
-    val root = BinaryNode(3)
+    val root = BinaryNode(6)
 
     val minHeap = MinHeap(root)
 
-    minHeap.insert(4)
-    minHeap.insert(6)
-    minHeap.insert(3)
-    minHeap.insert(5)
-    minHeap.insert(7)
-    minHeap.insert(1)
-    minHeap.insert(8)
-    minHeap.insert(2)
+    minHeap.insert(12)
+    minHeap.insert(23)
+    minHeap.insert(34)
+    minHeap.insert(87)
+    minHeap.insert(71)
+    minHeap.insert(56)
+    minHeap.insert(92)
 
 
     println(minHeap)
+
+    println(minHeap.delete())
+    println(minHeap.delete())
+    println(minHeap.delete())
+    println(minHeap.delete())
+
+    println(minHeap)
+
 }
