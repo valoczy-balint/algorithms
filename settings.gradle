@@ -13,4 +13,7 @@ include('dfs')
 
 include 'dynamic-programming:staircase'
 findProject(':dynamic-programming:staircase')?.name = 'staircase'
+include 'dynamic-programming:integerBreak'
+findProject(':dynamic-programming:integerBreak')?.name = 'integerBreak'
+include 'test'
 
