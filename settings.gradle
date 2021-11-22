@@ -15,5 +15,6 @@ include 'dynamic-programming:staircase'
 findProject(':dynamic-programming:staircase')?.name = 'staircase'
 include 'dynamic-programming:integerBreak'
 findProject(':dynamic-programming:integerBreak')?.name = 'integerBreak'
-include 'test'
+include 'dynamic-programming:kattis'
+findProject(':dynamic-programming:kattis')?.name = 'kattis'
 
