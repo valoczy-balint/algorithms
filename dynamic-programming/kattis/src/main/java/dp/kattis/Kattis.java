@@ -53,12 +53,15 @@ public class Kattis {
         Integer[][] cache = new Integer[items.length][target];
 
         for (int row = 0; row < items.length; row++) {
-
             for (int col = 0; col < target; col++) {
                 Integer currentItem = items[row];
 
                 if (row == 0) {
-                    cache[row][col] = currentItem;
+                    if(col >= currentItem) {
+                        cache[row][col] = currentItem;
+                    } else {
+                        cache[row][col] = 0;
+                    }
                 } else if (currentItem > col + 1) {
                     cache[row][col] = cache[row - 1][col];
                 } else {
