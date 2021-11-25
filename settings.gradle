@@ -17,4 +17,5 @@ include 'dynamic-programming:integerBreak'
 findProject(':dynamic-programming:integerBreak')?.name = 'integerBreak'
 include 'dynamic-programming:kattis'
 findProject(':dynamic-programming:kattis')?.name = 'kattis'
+include 'findFirstRepeatingCharacter'
 
