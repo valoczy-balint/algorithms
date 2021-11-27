@@ -6,7 +6,6 @@ include('tree')
 include('heap')
 include("avl")
 
-include("merge-sort")
 include('dijkstra')
 include('bfs')
 include('dfs')
@@ -18,4 +17,9 @@ findProject(':dynamic-programming:integerBreak')?.name = 'integerBreak'
 include 'dynamic-programming:kattis'
 findProject(':dynamic-programming:kattis')?.name = 'kattis'
 include 'findFirstRepeatingCharacter'
+
+include 'sort:merge-sort'
+findProject(':sort:merge-sort')?.name = 'merge-sort'
+include 'sort:quick-sort'
+findProject(':sort:quick-sort')?.name = 'quick-sort'
 
