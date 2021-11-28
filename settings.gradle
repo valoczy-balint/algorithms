@@ -22,4 +22,6 @@ include 'sort:merge-sort'
 findProject(':sort:merge-sort')?.name = 'merge-sort'
 include 'sort:quick-sort'
 findProject(':sort:quick-sort')?.name = 'quick-sort'
+include 'sort:bubble-sort'
+findProject(':sort:bubble-sort')?.name = 'bubble-sort'
 
