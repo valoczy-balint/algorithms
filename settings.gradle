@@ -26,4 +26,6 @@ include 'sort:bubble-sort'
 findProject(':sort:bubble-sort')?.name = 'bubble-sort'
 include 'sort:select-sort'
 findProject(':sort:select-sort')?.name = 'select-sort'
+include 'sort:insert-sort'
+findProject(':sort:insert-sort')?.name = 'insert-sort'
 
