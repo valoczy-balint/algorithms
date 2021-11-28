@@ -1,4 +1,4 @@
-package `merge-sort`
+package merge
 
 import kotlin.system.measureTimeMillis
 

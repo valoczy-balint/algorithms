@@ -17,6 +17,5 @@ public class QuickSortTest {
 
         System.out.println(quickSort.sort(input1));
 
-
     }
 }

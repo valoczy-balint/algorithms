@@ -7,11 +7,11 @@ import java.util.*;
 
 public class QuickSort implements Sort {
 
-    public <T extends Comparable> List<T> sort(List<T> list) {
+    public <T extends Comparable<T>> List<T> sort(List<T> list) {
         return recursive(new LinkedList<>(list));
     }
 
-    private <T extends Comparable> List<T> recursive(List<T> list) {
+    private <T extends Comparable<T>> List<T> recursive(List<T> list) {
         T pivot;
 
         if (list.size() < 2) {

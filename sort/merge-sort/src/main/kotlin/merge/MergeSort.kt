@@ -1,7 +1,10 @@
-package `merge-sort`
+package merge
 
-class MergeSort {
-    fun sort(list: List<Int>): List<Int> {
+import sort.Sort
+
+class MergeSort : Sort {
+    override fun <T : Comparable<T>> sort(input: List<T>): List<T> {
+        val list = input
         if (list.size == 1) return list
 
         var list1 = list.subList(0, list.size / 2)
@@ -16,8 +19,8 @@ class MergeSort {
         return merge(list1, list2)
     }
 
-    private fun merge(list1: List<Int>, list2: List<Int>): List<Int> {
-        val result = mutableListOf<Int>()
+    private fun <T : Comparable<T>> merge(list1: List<T>, list2: List<T>): List<T> {
+        val result = mutableListOf<T>()
 
         var list1Iterator = 0
         var list2Iterator = 0
