@@ -3,7 +3,9 @@ package sort.quick;
 import org.jetbrains.annotations.NotNull;
 import sort.Sort;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
 
 public class QuickSort implements Sort {
 
