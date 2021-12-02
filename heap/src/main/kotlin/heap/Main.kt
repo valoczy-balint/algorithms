@@ -6,7 +6,7 @@ fun main() {
 
     val root = BinaryNode(6)
 
-    val minHeap = MinHeap(root)
+    val minHeap = MinHeapTree(root)
 
     minHeap.insert(12)
     minHeap.insert(23)

@@ -5,7 +5,7 @@ import tree.BinaryNode
 /**
  * Not concurrent
  */
-class MinHeap<T : Comparable<T>>(
+class MaxHeap<T : Comparable<T>>(
     val list: MutableList<T> = mutableListOf(), override val size: Int = 0
 ) : Collection<T> {
 
@@ -33,15 +33,15 @@ class MinHeap<T : Comparable<T>>(
                 val rightChild = rightChild(index)
                 val current = list[index]
 
-                index = if (leftChild < rightChild) {
-                    if (leftChild < current) {
+                index = if (leftChild > rightChild) {
+                    if (leftChild > current) {
                         swap(leftChildIndex(index), index)
                         leftChildIndex(index)
                     } else {
                         break
                     }
                 } else {
-                    if (rightChild < current) {
+                    if (rightChild > current) {
                         swap(rightChildIndex(index), index)
                         rightChildIndex(index)
                     } else {
@@ -49,7 +49,7 @@ class MinHeap<T : Comparable<T>>(
                     }
                 }
             } else if (hasLeftChild(index)) {
-                if (leftChild(index) < list[index]) {
+                if (leftChild(index) > list[index]) {
                     swap(leftChildIndex(index), index)
                     index = leftChildIndex(index)
                 } else {
@@ -69,7 +69,7 @@ class MinHeap<T : Comparable<T>>(
 
         while (index > 0) {
             val item = list[index]
-            if (item < parent(index)) {
+            if (item > parent(index)) {
                 swap(index, parentIndex(index))
                 index = parentIndex(index)
             } else {

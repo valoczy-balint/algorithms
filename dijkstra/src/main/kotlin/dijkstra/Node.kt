@@ -29,4 +29,6 @@ class Node(
             }
         }
     }
+
+    override fun toString() = value
 }
