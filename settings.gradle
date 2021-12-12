@@ -30,4 +30,8 @@ include 'sort:insert-sort'
 findProject(':sort:insert-sort')?.name = 'insert-sort'
 include 'sort:heap-sort'
 findProject(':sort:heap-sort')?.name = 'heap-sort'
+include 'challenges:integerPalindrome'
+findProject(':challenges:integerPalindrome')?.name = 'integerPalindrome'
+include 'challenges:linkedListPalindrome'
+findProject(':challenges:linkedListPalindrome')?.name = 'linkedListPalindrome'
 
