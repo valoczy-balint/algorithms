@@ -34,4 +34,6 @@ include 'challenges:integerPalindrome'
 findProject(':challenges:integerPalindrome')?.name = 'integerPalindrome'
 include 'challenges:linkedListPalindrome'
 findProject(':challenges:linkedListPalindrome')?.name = 'linkedListPalindrome'
+include 'challenges:lowestCommonAncestor'
+findProject(':challenges:lowestCommonAncestor')?.name = 'lowestCommonAncestor'
 
