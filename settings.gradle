@@ -38,4 +38,8 @@ include 'challenges:lowestCommonAncestorInBST'
 findProject(':challenges:lowestCommonAncestorInBST')?.name = 'lowestCommonAncestorInBST'
 include 'challenges:lowestCommonAncestorInBinaryTree'
 findProject(':challenges:lowestCommonAncestorInBinaryTree')?.name = 'lowestCommonAncestorInBinaryTree'
+include 'challenges:productOfArrayExceptSelf'
+findProject(':challenges:productOfArrayExceptSelf')?.name = 'productOfArrayExceptSelf'
+include 'challenges:slidingWindowMaximum'
+findProject(':challenges:slidingWindowMaximum')?.name = 'slidingWindowMaximum'
 
