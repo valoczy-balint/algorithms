@@ -8,7 +8,6 @@ import tree.BinaryNode
 class MinHeap<T : Comparable<T>>(
     val list: MutableList<T> = mutableListOf(), override val size: Int = 0
 ) : Collection<T> {
-
     private fun parentIndex(i: Int) = (i - 1) / 2
     private fun hasParent(i: Int) = parentIndex(i) >= 0
     private fun parent(i: Int): T = list[parentIndex(i)]
@@ -82,12 +81,6 @@ class MinHeap<T : Comparable<T>>(
         val temp = list[index1]
         list[index1] = list[index2]
         list[index2] = temp
-    }
-
-    private fun swap(node1: BinaryNode<T>, node2: BinaryNode<T>) {
-        val temp = node1.value
-        node1.value = node2.value
-        node2.value = temp
     }
 
     override fun toString() = list.toString()
