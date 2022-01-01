@@ -6,7 +6,7 @@ class DijkstraWithHeap {
     private val minHeap = MinHeap<TentativeDistance>()
 
     fun findShortestPaths(start: Node): MutableMap<Node, Int> {
-        val visited = mutableListOf<Node>()
+        val visited = mutableSetOf<Node>()
         val shortestPaths = mutableMapOf<Node, Int>()
         shortestPaths[start] = 0
 
