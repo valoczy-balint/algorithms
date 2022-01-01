@@ -1,7 +1,5 @@
 package heap
 
-import tree.BinaryNode
-
 /**
  * Not concurrent
  */

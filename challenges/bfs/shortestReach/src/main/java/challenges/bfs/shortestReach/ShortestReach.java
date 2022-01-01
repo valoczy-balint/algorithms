@@ -1,7 +1,6 @@
 package challenges.bfs.shortestReach;
 
 import java.util.*;
-import java.util.stream.Collectors;
 
 // https://www.hackerrank.com/challenges/ctci-bfs-shortest-reach/problem
 public class ShortestReach {
@@ -14,7 +13,7 @@ public class ShortestReach {
             if(input.edges.containsKey(input.s)) {
 
                 Queue<Map.Entry<Integer, Integer>> queue = new LinkedList<>();
-                queue.add(new AbstractMap.SimpleEntry<Integer, Integer>(input.s, 0));
+                queue.add(new AbstractMap.SimpleEntry<>(input.s, 0));
 
                 while(!queue.isEmpty()) {
                     Map.Entry<Integer, Integer> entry = queue.remove();
@@ -32,7 +31,7 @@ public class ShortestReach {
                                             !result.containsKey(neighbourNode)
                                     )
                                     .map(neighbourNode ->
-                                            new AbstractMap.SimpleEntry<Integer, Integer>
+                                            new AbstractMap.SimpleEntry<>
                                                     (neighbourNode, currentDistance + 6)
                                     ).toList()
                     );

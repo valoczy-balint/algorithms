@@ -1,6 +1,9 @@
 package challenges.dijkstra.pathwithmaxprobability;
 
-import java.util.*;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
+import java.util.Set;
 
 public class PathWithMaximumProbabilityWithoutHeap {
     public double maxProbability(int n, int[][] edges, double[] succProb, int start, int end) {
