@@ -2,7 +2,9 @@ package challenges.bfs.shortestReach;
 
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertArrayEquals;
+import java.util.List;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class ShortestReachTest {
     private ShortestReach shortestReach = new ShortestReach();
@@ -11,11 +13,10 @@ public class ShortestReachTest {
     public void test() {
         int n = 6;
         int s = 1;
-        int[][] edges = new int[][]{{1,2},{2,3},{3,4},{1,5}};
+        Integer[][] edges = new Integer[][]{{1,2},{2,3},{3,4},{1,5}};
+        List<String> expected = List.of("6 12 18 6 -1 ");
+        List<String> result = shortestReach.shortestReach(List.of(new Input(n, s, edges)));
 
-        int[] expected = new int[]{1,2,3,1,-1};
-        int[] result = shortestReach.shortestReach(edges, s, n);
-
-        assertArrayEquals(expected, result);
+        assertEquals(expected, result);
     }
 }

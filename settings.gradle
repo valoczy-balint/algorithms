@@ -50,4 +50,8 @@ include 'challenges:bfs:shortestReach'
 findProject(':challenges:bfs:shortestReach')?.name = 'shortestReach'
 include 'challenges:trappingRainWater'
 findProject(':challenges:trappingRainWater')?.name = 'trappingRainWater'
+include 'challenges:balancedBrackets'
+findProject(':challenges:balancedBrackets')?.name = 'balancedBrackets'
+include 'challenges:contacts'
+findProject(':challenges:contacts')?.name = 'contacts'
 
