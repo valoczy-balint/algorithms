@@ -2,8 +2,6 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 public class BalancedBracketsTest {
-    BalancedBrackets balancedBrackets = new BalancedBrackets();
-
     @Test
     public void test() {
         String[] input = new String[]{
@@ -56,7 +54,7 @@ public class BalancedBracketsTest {
 
         for (int i = 0; i < input.length; i++) {
             System.out.println(i);
-            String result = balancedBrackets.isBalanced(input[i]);
+            String result = BalancedBrackets.isBalanced(input[i]);
             Assertions.assertEquals(expected[i], result);
         }
     }

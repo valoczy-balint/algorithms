@@ -24,6 +24,6 @@ public class Contacts {
     }
 
     private enum Operation {
-        ADD, FIND;
+        ADD, FIND
     }
 }

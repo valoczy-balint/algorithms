@@ -6,7 +6,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class TrappingRainWaterTest {
 
-    private TrappingRainWater trappingRainWater = new TrappingRainWater();
+    private final TrappingRainWater trappingRainWater = new TrappingRainWater();
 
     @Test
     public void test() {

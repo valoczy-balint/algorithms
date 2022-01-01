@@ -3,7 +3,7 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 public class PathWithMaximumProbabilityTest {
-    private PathWithMaximumProbabilityWithHeap pathWithMaximumProbabilityWithHeap = new PathWithMaximumProbabilityWithHeap();
+    private final PathWithMaximumProbabilityWithHeap pathWithMaximumProbabilityWithHeap = new PathWithMaximumProbabilityWithHeap();
 
     @Test
     public void test() {

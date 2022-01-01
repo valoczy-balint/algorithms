@@ -7,7 +7,7 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class ShortestReachTest {
-    private ShortestReach shortestReach = new ShortestReach();
+    private final ShortestReach shortestReach = new ShortestReach();
 
     @Test
     public void test() {

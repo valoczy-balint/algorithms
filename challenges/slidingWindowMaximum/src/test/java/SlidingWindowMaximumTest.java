@@ -1,8 +1,8 @@
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class Test {
+public class SlidingWindowMaximumTest {
 
-    private SlidingWindowMaximum sut = new SlidingWindowMaximum();
+    private final SlidingWindowMaximum sut = new SlidingWindowMaximum();
 
     @org.junit.jupiter.api.Test
     public void test() {
