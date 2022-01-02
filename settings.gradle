@@ -17,6 +17,8 @@ findProject(':dynamic-programming:integerBreak')?.name = 'integerBreak'
 include 'dynamic-programming:kattis'
 findProject(':dynamic-programming:kattis')?.name = 'kattis'
 include 'findFirstRepeatingCharacter'
+include 'dynamic-programming:kadane'
+findProject(':dynamic-programming:kadane')?.name = 'kadane'
 
 include 'sort:merge-sort'
 findProject(':sort:merge-sort')?.name = 'merge-sort'
@@ -54,4 +56,5 @@ include 'challenges:balancedBrackets'
 findProject(':challenges:balancedBrackets')?.name = 'balancedBrackets'
 include 'challenges:contacts'
 findProject(':challenges:contacts')?.name = 'contacts'
+
 
