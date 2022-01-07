@@ -56,5 +56,8 @@ include 'challenges:balancedBrackets'
 findProject(':challenges:balancedBrackets')?.name = 'balancedBrackets'
 include 'challenges:contacts'
 findProject(':challenges:contacts')?.name = 'contacts'
-
+include 'challenges:runningMedian'
+findProject(':challenges:runningMedian')?.name = 'runningMedian'
+include 'challenges:numberOfConnectedComponentsInAnUndirectedGraph'
+findProject(':challenges:numberOfConnectedComponentsInAnUndirectedGraph')?.name = 'numberOfConnectedComponentsInAnUndirectedGraph'
 
