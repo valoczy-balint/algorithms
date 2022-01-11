@@ -62,4 +62,6 @@ include 'challenges:unionFind:numberOfConnectedComponentsInAnUndirectedGraph'
 findProject(':challenges:unionFind:numberOfConnectedComponentsInAnUndirectedGraph')?.name = 'numberOfConnectedComponentsInAnUndirectedGraph'
 include 'challenges:unionFind:numberOfProvinces'
 findProject(':challenges:unionFind:numberOfProvinces')?.name = 'numberOfProvinces'
+include 'challenges:swapNodes'
+findProject(':challenges:swapNodes')?.name = 'swapNodes'
 
