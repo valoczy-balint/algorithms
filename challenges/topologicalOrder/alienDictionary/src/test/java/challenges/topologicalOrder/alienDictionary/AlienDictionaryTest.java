@@ -55,4 +55,17 @@ public class AlienDictionaryTest {
         assertTrue(letterOrder.indexOf('e') > letterOrder.indexOf('b'));
         assertTrue(letterOrder.indexOf('f') > letterOrder.indexOf('e'));
     }
+
+    @Test
+    public void testInvalidOrder() {
+        Map<Character, Set<Character>> graph = Map.of(
+                'a', Set.of('b'),
+                'b', Set.of('c'),
+                'c', Set.of('a')
+        );
+        Assertions.assertThrows(
+                RuntimeException.class,
+                () -> alienDictionary.findOrder(graph)
+        );
+    }
 }
