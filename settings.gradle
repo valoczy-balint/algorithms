@@ -64,4 +64,6 @@ include 'challenges:unionFind:numberOfProvinces'
 findProject(':challenges:unionFind:numberOfProvinces')?.name = 'numberOfProvinces'
 include 'challenges:swapNodes'
 findProject(':challenges:swapNodes')?.name = 'swapNodes'
+include 'challenges:topologicalOrder:alienDictionary'
+findProject(':challenges:topologicalOrder:alienDictionary')?.name = 'alienDictionary'
 
