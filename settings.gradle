@@ -10,6 +10,8 @@ include('dijkstra')
 include('bfs')
 include('dfs')
 
+include('kotlin-skeleton')
+
 include 'dynamic-programming:staircase'
 findProject(':dynamic-programming:staircase')?.name = 'staircase'
 include 'dynamic-programming:integerBreak'
@@ -66,4 +68,15 @@ include 'challenges:swapNodes'
 findProject(':challenges:swapNodes')?.name = 'swapNodes'
 include 'challenges:topologicalOrder:alienDictionary'
 findProject(':challenges:topologicalOrder:alienDictionary')?.name = 'alienDictionary'
+include 'challenges:candies'
+findProject(':challenges:candies')?.name = 'candies'
 
+include 'interview:kotlin-skeleton-1'
+findProject(':interview:kotlin-skeleton-1')?.name = 'kotlin-skeleton-1'
+include 'interview:kotlin-skeleton-2'
+findProject(':interview:kotlin-skeleton-2')?.name = 'kotlin-skeleton-2'
+
+include 'challenges:amazon-demo-1'
+findProject(':challenges:amazon-demo-1')?.name = 'amazon-demo-1'
+include 'challenges:amazon-demo-2'
+findProject(':challenges:amazon-demo-2')?.name = 'amazon-demo-2'
