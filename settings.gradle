@@ -80,3 +80,6 @@ include 'challenges:amazon-demo-1'
 findProject(':challenges:amazon-demo-1')?.name = 'amazon-demo-1'
 include 'challenges:amazon-demo-2'
 findProject(':challenges:amazon-demo-2')?.name = 'amazon-demo-2'
+include 'challenges:dijkstra:shortestReach2'
+findProject(':challenges:dijkstra:shortestReach2')?.name = 'shortestReach2'
+
