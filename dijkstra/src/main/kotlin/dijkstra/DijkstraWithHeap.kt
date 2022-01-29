@@ -17,10 +17,12 @@ class DijkstraWithHeap {
             val node = tentativeDistance.node
             val distanceFromStart = tentativeDistance.distance
 
+            if (visited.contains(node)) {
+                continue;
+            }
+
             node.neighbours.forEach { (neighbor, distanceFromCurrent) ->
-                if (!visited.contains(neighbor)) {
-                    minHeap.insert(TentativeDistance(neighbor, distanceFromCurrent + distanceFromStart))
-                }
+                minHeap.insert(TentativeDistance(neighbor, distanceFromCurrent + distanceFromStart))
 
                 if (!shortestPaths.contains(neighbor)) {
                     shortestPaths[neighbor] = shortestPaths[node]!! + distanceFromCurrent
