@@ -2,6 +2,10 @@ package com.amazon.interview
 
 class CodeList {
 
+    // ["banana apple kiwi", "orange apple anything"]
+    // ["banana apple kiwi mango orange apple kiwi]
+    // [orange, apple, apple, banana, apple kiwi, orange apple apple]
+
     fun foo(codeList: Array<String>, shoppingCart: Array<String>): Int {
         var codeListIndex = 0
         var codeIndex = 0
