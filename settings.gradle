@@ -85,3 +85,5 @@ findProject(':challenges:dijkstra:shortestReach2')?.name = 'shortestReach2'
 
 include 'challenges:searchInRotatedSortedArray'
 findProject(':challenges:searchInRotatedSortedArray')?.name = 'searchInRotatedSortedArray'
+include 'challenges:numberOfIslands'
+findProject(':challenges:numberOfIslands')?.name = 'numberOfIslands'
