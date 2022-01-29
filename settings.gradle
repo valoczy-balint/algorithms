@@ -83,3 +83,5 @@ findProject(':challenges:amazon-demo-2')?.name = 'amazon-demo-2'
 include 'challenges:dijkstra:shortestReach2'
 findProject(':challenges:dijkstra:shortestReach2')?.name = 'shortestReach2'
 
+include 'challenges:searchInRotatedSortedArray'
+findProject(':challenges:searchInRotatedSortedArray')?.name = 'searchInRotatedSortedArray'
