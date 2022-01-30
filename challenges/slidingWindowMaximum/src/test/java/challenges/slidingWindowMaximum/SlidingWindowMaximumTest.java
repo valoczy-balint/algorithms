@@ -1,3 +1,5 @@
+package challenges.slidingWindowMaximum;
+
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 public class SlidingWindowMaximumTest {
