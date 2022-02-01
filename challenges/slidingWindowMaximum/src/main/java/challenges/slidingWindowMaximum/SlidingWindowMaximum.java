@@ -7,7 +7,6 @@ public class SlidingWindowMaximum {
         for (int i = 0; i <= nums.length - k; i++) {
             Integer max = null;
 
-
             for (int j = i; j < i + k; j++) {
                 if (max == null || nums[j] > max) {
                     max = nums[j];
