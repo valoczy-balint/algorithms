@@ -95,3 +95,6 @@ include 'challenges:birthdayBar'
 findProject(':challenges:birthdayBar')?.name = 'birthdayBar'
 include 'challenges:magicSquare'
 findProject(':challenges:magicSquare')?.name = 'magicSquare'
+include 'challenges:pickingNumbers'
+findProject(':challenges:pickingNumbers')?.name = 'pickingNumbers'
+
