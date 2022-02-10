@@ -1,24 +1,32 @@
 package interview.pickingNumbers
 
+import kotlin.math.max
+
 // https://www.hackerrank.com/challenges/picking-numbers/
 class PickingNumbers {
+
     fun pickingNumbers(a: Array<Int>): Int {
-        var longestSubarray = 0
-        var currentSubarray = 1
-        a.indices.forEach { i ->
 
-            if (i > 0 && Math.abs(a[i] - a[i-1]) < 2) {
-                currentSubarray++
-            } else {
-                currentSubarray = 1
+        // Number -> length of list with (number - 1)
+        val map = HashMap<Int, Int>()
+
+        a.forEach { number ->
+            map[number]?.let { length ->
+                map[number] = length + 1
+            } ?: run {
+                map[number] = 1
             }
 
-            if(currentSubarray > longestSubarray) {
-                longestSubarray  = currentSubarray
-            }
+            val higherNumber = number + 1
+            map[higherNumber]?.let { higherLength ->
+                map[higherNumber] = higherLength + 1
+            } ?: run { map[higherNumber] = 1 }
+
         }
 
-        return longestSubarray
+        return map.entries.fold(0) { acc, entry ->
+            max(entry.value, acc)
+        }
     }
 }
 
