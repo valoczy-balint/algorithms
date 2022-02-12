@@ -97,4 +97,6 @@ include 'challenges:magicSquare'
 findProject(':challenges:magicSquare')?.name = 'magicSquare'
 include 'challenges:pickingNumbers'
 findProject(':challenges:pickingNumbers')?.name = 'pickingNumbers'
+include 'challenges:climbTheLeaderBoard'
+findProject(':challenges:climbTheLeaderBoard')?.name = 'climbTheLeaderBoard'
 
