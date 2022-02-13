@@ -1,16 +1,12 @@
-package interview.skeleton
+package challenges.climbLeaderboard
 
 class ClimbLeaderboard {
     fun climbingLeaderboard(ranked: Array<Int>, player: Array<Int>): Array<Int> {
-        val scoreToRankMap = LinkedHashMap<Int, Int>() //TODO array enough?
-
-        ranked.forEach { score ->
-            if (scoreToRankMap[score] == null) {
-                scoreToRankMap[score] = scoreToRankMap.size
-            }
-        }
-
-        val scores = scoreToRankMap.keys.toList()
+        // Rank = index + 1
+        val scores = ranked.fold(mutableSetOf<Int>()) { acc, item ->
+            acc.add(item)
+            acc
+        }.toTypedArray()
 
         fun map(playerScore: Int): Int {
             var start = 0
@@ -22,35 +18,35 @@ class ClimbLeaderboard {
                 val currentScore = scores[middle]
 
                 if (playerScore == currentScore) {
-                    return scoreToRankMap[currentScore]!!
+                    return middle + 1
                 } else if (playerScore < currentScore) {
                     if (scores.size > middle + 1 &&
                         playerScore > scores[middle + 1]
                     ) {
-                        return scoreToRankMap[scores[middle + 1]]!!
+                        return middle + 2
                     }
                     start = middle + 1
                     middle = start + ((end - start) / 2)
                 } else {
-                    if(0 < middle - 1 &&
-                            playerScore < scores[middle - 1]) {
-                        return scoreToRankMap[scores[middle]]!!
+                    if (0 <= middle - 1 &&
+                        playerScore < scores[middle - 1]
+                    ) {
+                        return middle + 1
                     }
                     end = middle
                     middle = start + ((end - start) / 2)
                 }
             }
 
-            if(start == 0) { // New highest score
-                return 1
-            } else {         // New lowest score
-                return scores.size
+            return if (start == 0) { // New highest score
+                1
+            } else {                 // New lowest score
+                scores.size + 1
             }
 
         }
 
         return player.map { map(it) }.toTypedArray()
-        // Nem mapolni kell, hanem az uj rankingban is lefuttatni a keresest
     }
 
 
