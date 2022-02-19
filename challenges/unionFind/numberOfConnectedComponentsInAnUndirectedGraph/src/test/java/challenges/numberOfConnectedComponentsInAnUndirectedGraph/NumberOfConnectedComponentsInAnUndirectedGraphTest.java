@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class NumberOfConnectedComponentsInAnUndirectedGraphTest {
-    private NumberOfConnectedComponentsInAnUndirectedGraph sut
+    private final NumberOfConnectedComponentsInAnUndirectedGraph sut
             = new NumberOfConnectedComponentsInAnUndirectedGraph();
 
 

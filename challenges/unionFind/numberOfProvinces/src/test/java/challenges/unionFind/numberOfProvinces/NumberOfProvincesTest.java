@@ -6,7 +6,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class NumberOfProvincesTest {
 
-    private NumberOfProvinces numberOfProvinces = new NumberOfProvinces();
+    private final NumberOfProvinces numberOfProvinces = new NumberOfProvinces();
 
     @Test
     public void test() {

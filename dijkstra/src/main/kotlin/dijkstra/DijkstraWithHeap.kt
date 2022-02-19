@@ -18,7 +18,7 @@ class DijkstraWithHeap {
             val distanceFromStart = tentativeDistance.distance
 
             if (visited.contains(node)) {
-                continue;
+                continue
             }
 
             node.neighbours.forEach { (neighbor, distanceFromCurrent) ->

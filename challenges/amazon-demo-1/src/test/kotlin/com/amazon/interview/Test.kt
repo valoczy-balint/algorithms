@@ -25,7 +25,7 @@ class Test {
             "cloths",
             "bags",
         )
-        val query = "bags";
+        val query = "bags"
 
 //        "abc", "abbs", "abbs"
 
@@ -51,7 +51,7 @@ class Test {
             "xxmm",
             "zeee",
         )
-        val query = "abbs";
+        val query = "abbs"
 
         val solution = Solution()
 
@@ -83,7 +83,7 @@ class Test {
             "abbs",
             "abbs",
         )
-        val query = "abbs";
+        val query = "abbs"
 
         val solution = Solution()
 
@@ -105,7 +105,7 @@ class Test {
             "abcdefg",
             "abCdefgH",
         )
-        val query = "abcdef";
+        val query = "abcdef"
 
         val solution = Solution()
 

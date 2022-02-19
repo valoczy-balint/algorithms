@@ -2,8 +2,8 @@ package challenges.unionFind.numberOfProvinces;
 
 //https://leetcode.com/problems/number-of-provinces/
 public class NumberOfProvinces {
-    int parents[];
-    int ranks[];
+    int[] parents;
+    int[] ranks;
 
     public int findCircleNum(int[][] isConnected) {
         int n = isConnected.length;
