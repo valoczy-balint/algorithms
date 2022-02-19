@@ -99,4 +99,6 @@ include 'challenges:pickingNumbers'
 findProject(':challenges:pickingNumbers')?.name = 'pickingNumbers'
 include 'challenges:climbTheLeaderBoard'
 findProject(':challenges:climbTheLeaderBoard')?.name = 'climbTheLeaderBoard'
+include 'challenges:commonChild'
+findProject(':challenges:commonChild')?.name = 'commonChild'
 
