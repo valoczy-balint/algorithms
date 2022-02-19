@@ -101,4 +101,6 @@ include 'challenges:climbTheLeaderBoard'
 findProject(':challenges:climbTheLeaderBoard')?.name = 'climbTheLeaderBoard'
 include 'challenges:commonChild'
 findProject(':challenges:commonChild')?.name = 'commonChild'
+include 'challenges:validParentheses'
+findProject(':challenges:validParentheses')?.name = 'validParentheses'
 
