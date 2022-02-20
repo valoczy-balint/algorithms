@@ -28,7 +28,7 @@ class GasStation {
             gasInTank += gasAtStation
             if(gasInTank < costToNextStation) {
                 result = currentIndex
-                break;
+                break
             }
 
             gasInTank -= costToNextStation
