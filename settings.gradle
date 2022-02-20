@@ -103,4 +103,5 @@ include 'challenges:commonChild'
 findProject(':challenges:commonChild')?.name = 'commonChild'
 include 'challenges:validParentheses'
 findProject(':challenges:validParentheses')?.name = 'validParentheses'
-
+include 'challenges:gasStation'
+findProject(':challenges:gasStation')?.name = 'gasStation'
